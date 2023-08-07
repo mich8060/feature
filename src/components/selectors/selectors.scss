@@ -1,0 +1,41 @@
+.selector {
+    background:var(--base---white);
+    border:solid 1px var(--neutrals--300);
+    border-radius:2px;
+    cursor: pointer;
+    font-family: "Orbikular";
+    font-size:16px;
+    font-weight: 600;
+    line-height:20px;
+    height:48px;
+    position:relative;
+    transition: all 0.3s ease-in-out;
+    width:100px;
+
+    &:disabled {
+        background:var(--neutrals--100);
+    }
+
+    &:hover {
+        border:solid 1px var(--base---black);
+
+        .selector {
+            &--notify {
+                border-left:solid 1px var(--base---black);
+                border-top:solid 1px var(--base---black);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+
+    &--notify {
+        background:var(--base---white);
+        border-left:solid 1px var(--neutrals--300);
+        border-top:solid 1px var(--neutrals--300);
+        border-top-left-radius: 4px;
+        bottom:0;
+        padding:2px 8px 0;
+        position:absolute;
+        right:0;
+    }
+}
