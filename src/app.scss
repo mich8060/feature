@@ -121,17 +121,20 @@ body {
 	font-family: "Graphik";
 }
 
-.buybox {
-	padding:24px;
+.panel {
 	width:470px;
+}
 
-	&--sizes {
-		display:flex;
-		flex-wrap: wrap;
-		gap:7px;
+.buybox {
+	background:var(--neutrals--50);
+	display: flex;
+	flex-direction: column;
+	gap:24px;
+	padding:24px;
 
-		button {
-
-		}
+	&--labels {
+		font-size:14px;
+		line-height:20px;
+		margin-bottom:-16px;
 	}
 }
