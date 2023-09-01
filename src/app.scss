@@ -138,3 +138,122 @@ body {
 		margin-bottom:-16px;
 	}
 }
+
+.header {
+	background:#fff;
+	border-bottom:solid 1px var(--neutrals--300);
+
+	&--banner {
+		background:var(--neutrals--100);
+		font-family: "Orbikular";
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+
+		&Container {
+			align-items: center;
+			display:flex;
+			height:32px;
+			justify-content: center;
+			margin:0 auto;
+			max-width:1440px;
+			position:relative;
+		}
+	}
+
+	&--branding {
+		align-items: center;
+		display:flex;
+		padding:20px 16px;
+		justify-content: center;
+	}
+}
+
+.nav {
+	align-items: center;
+	display:flex;
+	justify-content: center;
+	font-family: "Orbikular";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	margin:0 auto;
+	width:fit-content;
+
+	&:hover {
+		a {
+			opacity:0.5;
+		}
+	}
+
+	a {
+		color:var(--base---black);
+		padding:12px 16px;
+		text-decoration: none;
+		transition: opacity 0.5s ease;
+
+		&:hover {
+			opacity:1;
+		}
+	}
+}
+
+.panel {
+	display:flex;
+	flex-direction: column;
+	gap:24px;
+	flex:0 0 500px;
+	padding:0 16px;
+	width:480px;
+}
+
+.main {
+	&--container {
+		display:flex;
+		gap:16px;
+		justify-content: stretch;
+		max-width:1440px;
+		margin:0 auto;
+		padding:24px 60px 80px;
+		width:100%;
+	}
+}
+
+.info {
+	display:flex;
+	flex-direction: column;
+	gap:12px;
+	padding:16px 0;
+
+	&--brand {
+		color: var(--base-black, #010101);
+		font-family: "Graphik";
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 20px; 
+	}
+
+	&--price {
+		color: var(--base-black, #010101);
+		font-family: "Graphik";
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 20px;
+	}
+
+	&--title {
+		color: var(--base-black, #010101);
+		font-family: "Orbikular";
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 32px;
+	}
+}
+
+img {
+	display: block;
+	width:100%;
+}

@@ -1,0 +1,43 @@
+.stock {
+    color:var(--neutrals--600);
+    margin-top:12px;
+
+    strong {
+        color: #000;
+        font-family: Orbikular;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 133.333% */
+    }
+
+    ul {
+        display:flex;
+        flex-wrap: wrap;
+        gap:12px;
+        margin:8px 0;
+        padding:0;
+
+        li {
+            align-items: center;
+            color:black;
+            display:flex;
+            font-size:14px;
+            gap:4px;
+            list-style-type: none;
+            margin-bottom:8px;
+
+            &:before {
+                background-image:url('data:image/svg+xml,<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.7562 1.0153C11.4312 0.690294 10.9043 0.690294 10.5793 1.0153L4.3692 7.2254L1.4207 4.2769C1.0957 3.9519 0.568759 3.9519 0.243754 4.2769C-0.0812515 4.60191 -0.0812512 5.12885 0.243754 5.45385L3.7746 8.9847C4.09961 9.3097 4.62654 9.3097 4.95155 8.9847C4.96384 8.97241 4.97567 8.95983 4.98703 8.94698C5.02196 8.92158 5.05536 8.89313 5.08687 8.86162L11.7562 2.19225C12.0813 1.86724 12.0813 1.3403 11.7562 1.0153Z" fill="%23010101"/></svg>');
+                background-repeat:no-repeat;
+                background-position: center;
+                background-size: 14px auto;
+                content:"";
+                display:block;
+                height:24px;
+                flex:0 0 24px;
+                width:24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.vendors {
+    &--branding {
+        align-items: center;
+        display:flex;
+        gap:16px;
+    }
+
+    &--label {
+        color: var(--neutrals-600, #4C5564);
+        /* Graphik/Label/Small */
+        font-family: Graphik LCG;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        padding:4px 8px;
+    }
+}
