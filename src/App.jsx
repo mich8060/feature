@@ -47,9 +47,6 @@ function App() {
 						<Buybox />
 						<Stock />
 						<Tabs.Body>
-							<Tabs.Tab label="Product Details" />
-							<Tabs.Tab label="Shipping & Handling" />
-							<Tabs.Tab label="Returns" />
 							<Tabs.Panel>
 								<div style={{color:'#4C5564',fontSize:16,lineHeight:'24px'}}>
 									<p>
