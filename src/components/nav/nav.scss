@@ -1,0 +1,101 @@
+.nav {
+	align-items: center;
+	display:flex;
+	font-family: "BrunelTextShort";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	justify-content: center;
+    letter-spacing:0.25px;
+    padding:24px;
+    width:100%;
+
+    @media (min-width: 1024px) {
+        padding:0;
+        width:auto;
+    }
+
+    ul {
+        display:flex;
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        flex-direction: column;
+        width:100%;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            width:auto;
+        }
+
+        li {
+            padding:0;
+            margin:0;
+
+            @media (min-width: 1024px) {
+                &:hover {
+                    a {
+                        &.nav {
+                            &--primary {
+                                border-bottom: solid 2px var(--base---black, #000000);
+                                color:var(--base---black,  #000000);
+                            }
+                        }
+                    }
+
+                    .flyout {
+                        visibility: visible;
+                        user-select:auto;
+                        opacity: 1;
+
+                        &--container {
+                            animation-name: flyout-animation;
+                            animation-duration: 0.75s;
+                            animation-fill-mode: forwards;
+                            animation-iteration-count: 1;
+                            animation-delay: 0.25s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        &:hover {
+            a {
+                &.nav {
+                    &--primary {
+                        color:var(--neutrals--400, #9CA2AE);
+                    }
+                }
+            }
+        }
+    }
+
+	a {
+        &.nav {
+            &--primary {
+                background-image: url('data:image/svg+xml,<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M8.09458 4.92337C8.38747 4.63048 8.86235 4.63048 9.15524 4.92337L15.9052 11.6734C16.1981 11.9663 16.1981 12.4411 15.9052 12.734L9.15524 19.484C8.86235 19.7769 8.38747 19.7769 8.09458 19.484C7.80169 19.1911 7.80169 18.7163 8.09458 18.4234L14.3142 12.2037L8.09458 5.98403C7.80169 5.69114 7.80169 5.21627 8.09458 4.92337Z" fill="%23010101"/></svg>');
+                background-repeat:no-repeat;
+                background-position: right center;
+                border-bottom:solid 2px var(--base---white, #ffffff);
+                color:var(--base---black);
+                display:block;
+                padding:14px 0 10px;
+                text-decoration: none;
+                transition: color 0.5s ease 0.25s;
+    
+                @media (min-width: 1024px) {
+                    background-image:none;
+                    padding:14px 12px 10px;
+                }
+            }
+        }
+	}
+}
+
+@keyframes flyout-animation {
+    from { opacity:0; transform: translateY(-24px); }
+    to { opacity:1; transform: translateY(0px);}
+}

@@ -1,0 +1,16 @@
+.page {
+    &--home {
+        display:flex;
+        flex-direction: column;
+        gap:4px;
+        padding:48px;
+
+        &_menu {
+            outline:solid 1px red;
+
+            h4 {
+                margin:16px 0
+            }
+        }
+    }
+}

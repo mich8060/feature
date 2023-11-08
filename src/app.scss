@@ -47,42 +47,35 @@
 }
 
 @font-face {
-	font-family: "Orbikular";
-	src: url("./assets/fonts/Orbikular-ExtraLight.ttf");
-	font-weight: 100;
-}
-
-@font-face {
-	font-family: "Orbikular";
-	src: url("./assets/fonts/Orbikular-Light.ttf");
-	font-weight: 200;
-}
-
-@font-face {
-	font-family: "Orbikular";
-	src: url("./assets/fonts/Orbikular-Regular.ttf");
+	font-family: "BrunelTextShort";
+	src: url("./assets/fonts/BrunelTextShort-Roman-Trial.ttf");
 	font-weight: 400;
 }
 
 @font-face {
-	font-family: "Orbikular";
-	src: url("./assets/fonts/Orbikular-SemiBold.ttf");
+	font-family: "BrunelTextShort";
+	src: url("./assets/fonts/BrunelTextShort-Medium-Trial.ttf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "BrunelTextShort";
+	src: url("./assets/fonts/BrunelTextShort-Semibold-Trial.ttf");
 	font-weight: 600;
 }
 
 @font-face {
-	font-family: "Orbikular";
-	src: url("./assets/fonts/Orbikular-Bold.ttf");
+	font-family: "BrunelTextShort";
+	src: url("./assets/fonts/BrunelTextShort-Bold-Trial.ttf");
 	font-weight: 700;
 }
 
-@font-face {
-	font-family: "Orbikular";
-	src: url("./assets/fonts/Orbikular-ExtraBold.ttf");
-	font-weight: 800;
-}
-
 * { box-sizing: border-box; }
+
+a {
+	color:#0056FF;
+	text-decoration: none;
+}
 
 /* Design System Colors */
 :root {
@@ -121,6 +114,9 @@ body {
 	font-family: "Graphik";
 }
 
+.app {
+}
+
 .panel {
 	width:470px;
 }
@@ -139,64 +135,9 @@ body {
 	}
 }
 
-.header {
-	background:#fff;
-	border-bottom:solid 1px var(--neutrals--300);
 
-	&--banner {
-		background:var(--neutrals--100);
-		font-family: "Orbikular";
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 700;
 
-		&Container {
-			align-items: center;
-			display:flex;
-			height:32px;
-			justify-content: center;
-			margin:0 auto;
-			max-width:1440px;
-			position:relative;
-		}
-	}
 
-	&--branding {
-		align-items: center;
-		display:flex;
-		padding:20px 16px;
-		justify-content: center;
-	}
-}
-
-.nav {
-	align-items: center;
-	display:flex;
-	justify-content: center;
-	font-family: "Orbikular";
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 500;
-	margin:0 auto;
-	width:fit-content;
-
-	&:hover {
-		a {
-			opacity:0.5;
-		}
-	}
-
-	a {
-		color:var(--base---black);
-		padding:12px 16px;
-		text-decoration: none;
-		transition: opacity 0.5s ease;
-
-		&:hover {
-			opacity:1;
-		}
-	}
-}
 
 .panel {
 	display:flex;
@@ -245,7 +186,7 @@ body {
 
 	&--title {
 		color: var(--base-black, #010101);
-		font-family: "Orbikular";
+		font-family: "BrunelTextShort";
 		font-size: 24px;
 		font-style: normal;
 		font-weight: 600;

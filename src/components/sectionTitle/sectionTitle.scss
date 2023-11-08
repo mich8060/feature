@@ -1,0 +1,50 @@
+.sectionTitle {
+    border-bottom:solid 2px var(--neutrals--300);
+    color: var(--base-black, #010101);
+    display:flex;
+    flex:1;
+    font-family: "Graphik";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    max-height:24px;
+    line-height: 20px; /* 142.857% */
+    margin:0 0 16px;
+    min-width:100%;
+    text-transform: uppercase;
+
+    @media (min-width: 1024px) {
+        margin:0;
+    }
+
+    span {
+        display:block;
+        flex:1;
+    }
+
+    a {
+        align-items: center;
+        color:var(--base-black, #000) !important;
+        display:flex !important;
+        flex: 1;
+        font-family: "BrunelTextShort";
+        font-size:14px;
+        font-weight: 500 !important;
+        letter-spacing: 0px !important;
+        line-height:24px;
+        max-height: 24px;
+        max-width: 54px;
+        padding: 3px 0 0;
+        gap:4px;
+        text-transform: none;
+
+        @media (min-width: 1024px) {
+            padding:0;
+        }
+
+        svg {
+            position:relative;
+            top:-2px;
+        }
+    }
+}

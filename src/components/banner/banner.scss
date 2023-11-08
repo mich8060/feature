@@ -1,0 +1,21 @@
+.banner {
+    flex:1;
+    font-family: "BrunelTextShort";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+
+    @media (min-width: 640px) {
+        font-size: 16px;
+    }
+
+    &--container {
+        align-items: center;
+        display:flex;
+        height:32px;
+        justify-content: center;
+        margin:0 auto;
+        max-width:1440px;
+        position:relative;
+    }
+}

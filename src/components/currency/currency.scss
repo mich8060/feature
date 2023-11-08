@@ -1,0 +1,18 @@
+.currency {
+    display:none;
+    flex:0 0 200px;
+
+    @media (min-width: 1024px) {
+        display:block;
+    }
+
+    select {
+        width:50px;
+        border:none;
+        background:transparent;
+
+        &:active {
+            outline:none;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Latest",
+        "href": "https://feature.com/collections/latest",
+        "menu": "LatestMenu"
+    },{
+        "title": "Releases",
+        "href": "https://feature.com/collections/current-releases",
+        "menu": "ReleasesMenu"
+    },{
+        "title": "Brands",
+        "href": "https://feature.com/pages/brands",
+        "menu": "BrandsMenu"
+    },{
+        "title": "Clothing",
+        "href": "https://feature.com/collections/clothing",
+        "menu": "ClothingMenu"
+    },{
+        "title": "Footwear",
+        "href": "https://feature.com/collections/footwear",
+        "menu": "FootwearMenu"
+    },{
+        "title": "Accessories",
+        "href": "https://feature.com/collections/accessories",
+        "menu": "AccessoriesMenu"
+    },{
+        "title": "Lifestyle",
+        "href": "https://feature.com/collections/lifestyle",
+        "menu": "LifestyleMenu"
+    },{
+        "title": "News",
+        "href": "https://feature.com/blogs/feature-sneaker-boutique",
+        "menu": "NewsMenu"
+    },{
+        "title": "Sale",
+        "href": "https://feature.com/collections/sale-items",
+        "menu": "SaleMenu"
+    }
+]
