@@ -38,7 +38,7 @@ export default function Nav(){
         }else{
             setMenu(label);
         }
-        if(screenWidth < 1024){
+        if(screenWidth < 1025){
             e.preventDefault();
         }
     }

@@ -6,36 +6,13 @@ import Branding from '../branding/'
 import Currency from '../currency';
 import Nav from '../nav';
 import Search from '../search';
+import SeaerchOverlay from '../searchOverlay';
 
 export default function Header(){
 
 	const [hamburger, setHamburger] = useState(false);
-
-	const useScrollDirection = () => {
-		const [scrollDirection, setScrollDirection] = useState(null);
-
-		useEffect(() => {
-			let lastScrollY = window.scrollY;
-
-			const updateScrollDirection = () => {
-				const scrollY = window.scrollY;
-				const direction = scrollY > lastScrollY ? "down" : "up";
-				if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
-					setScrollDirection(direction);
-				}
-				lastScrollY = scrollY > 0 ? scrollY : 0;
-			};
-
-			window.addEventListener("scroll", updateScrollDirection); // add event listener
-			return () => {
-				window.removeEventListener("scroll", updateScrollDirection); // clean up
-			}
-		}, [scrollDirection]);
-
-		return scrollDirection;
-	};
-
-	const scrollDirection = useScrollDirection();
+    const [search, setSearch] = useState(false);
+	const [searchOverlay, setSearchOverlay] = useState(false);
 
 	const hamburgerMenu = () => {
 		setHamburger(true);
@@ -45,9 +22,17 @@ export default function Header(){
 		setHamburger(false);
 	}
 
+	const searchMobile = () => {
+		setSearchOverlay(!searchOverlay);
+	}
+
+	const searchMode = (e) => {
+		setSearch(e)
+	}
+
     return( 
 		<header className={`header ${hamburger ? 'open' : ''}`}>
-
+			<SeaerchOverlay active={searchOverlay} searchMobile={searchMobile} />
 			<div className="header--overlay" onClick={closeHamburgerMenu}></div>
 			<div className="header--banner">
 				<div className="header--bannerContainer">
@@ -84,7 +69,7 @@ export default function Header(){
 					</div>
 					<Branding />
 					<div className="header--mobile">
-						<button className="header--search">
+						<button className="header--search" onClick={ searchMobile }>
 							<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fillRule="evenodd" clipRule="evenodd" d="M5.42893 14.0792C2.93934 11.5896 2.93934 7.55314 5.42893 5.06354C7.91852 2.57395 11.955 2.57395 14.4445 5.06354C16.9341 7.55314 16.9341 11.5896 14.4445 14.0792C11.955 16.5687 7.91852 16.5687 5.42893 14.0792ZM4.36827 4.00288C1.29289 7.07826 1.29289 12.0644 4.36827 15.1398C7.25273 18.0243 11.8181 18.2033 14.9113 15.677L19.4243 20.19C19.7172 20.4829 20.1921 20.4829 20.485 20.19C20.7779 19.8972 20.7779 19.4223 20.485 19.1294L15.9786 14.623C18.5715 11.529 18.4137 6.91141 15.5052 4.00288C12.4298 0.927504 7.44365 0.927504 4.36827 4.00288Z" fill="#010101"/>
 							</svg>
@@ -97,10 +82,10 @@ export default function Header(){
 						</button>
 					</div>
 				</div>
-				<div className="header--navigation">
+				<div className={`header--navigation ${search ? 'search--mode' : ''}`}>
 					<Branding />
 					<Nav />
-					<Search />
+					<Search searchMode={searchMode} />
 				</div>
 			</div>
 		</header>

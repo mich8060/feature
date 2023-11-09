@@ -7,12 +7,15 @@
 	font-weight: 400;
 	justify-content: center;
     letter-spacing:0.25px;
+    overflow-x:hidden;
     padding:24px;
     width:100%;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
         padding:0;
-        width:auto;
+        transition:width 0.5s ease, min-width 0.5s ease;
+        min-width:788px;
+        width:788px;
     }
 
     ul {
@@ -23,7 +26,7 @@
         flex-direction: column;
         width:100%;
 
-        @media (min-width: 1024px) {
+        @media (min-width: 1025px) {
             flex-direction: row;
             width:auto;
         }
@@ -32,7 +35,7 @@
             padding:0;
             margin:0;
 
-            @media (min-width: 1024px) {
+            @media (min-width: 1025px) {
                 &:hover {
                     a {
                         &.nav {
@@ -61,7 +64,7 @@
         }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
         &:hover {
             a {
                 &.nav {
@@ -86,7 +89,7 @@
                 text-decoration: none;
                 transition: color 0.5s ease 0.25s;
     
-                @media (min-width: 1024px) {
+                @media (min-width: 1025px) {
                     background-image:none;
                     padding:14px 12px 10px;
                 }

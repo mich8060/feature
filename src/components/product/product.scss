@@ -1,52 +1,40 @@
-.releases {
-    display: flex;
+.product {
+    display:flex;
+    flex:1;
     flex-direction: column;
-    gap:8px;
-    width:100%;
-
-    &.sm {
-
-        @media (min-width: 1025px) {
-            max-width: 219px;
-        }
-    }
-
-    &:hover {
-        text-decoration: none !important;
-    }
+    gap:16px;
+    min-width:110px;
 
     &--brand {
         color: var(--base-black, #010101);
         font-family: "Graphik";
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
-        line-height: 16px;
-        text-transform:uppercase;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: uppercase;
+        white-space: nowrap; 
     }
 
-    &--image {
-        aspect-ratio: 3/2;
-        background-size:cover;
-    }
-
-    &--meta {
+    &--price {
         color: var(--base-black, #010101);
         font-family: "Graphik";
-        font-size: 12px;
+        font-size: 14px;
         font-style: normal;
         font-weight: 600;
-        line-height: 16px;
-        text-transform:uppercase;
+        line-height: 20px; /* 142.857% */
     }
 
     &--title {
         color: var(--base-black, #010101);
-        font-size: 16px;
+        font-family: "BrunelTextShort";
+        font-size: 18px;
         font-style: normal;
         font-weight: 300;
-        line-height: 20px; /* 142.857% */
-        margin-bottom:12px;
+        height:48px;
+        line-height: 24px; /* 133.333% */
         overflow: hidden;
         display: -webkit-box;
         -webkit-line-clamp: 2; /* number of lines to show */
