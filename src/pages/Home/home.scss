@@ -6,6 +6,12 @@
         padding:48px;
 
         &_menu {
+            display:flex;
+            flex-direction: column;
+
+            a {
+                padding:8px 0;
+            }
 
             h4 {
                 margin:16px 0

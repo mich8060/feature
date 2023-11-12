@@ -1,0 +1,71 @@
+.raffleHero {
+    margin:0 auto;
+    min-width:375px;
+    max-width:1440px;
+    padding:0;
+    width:100%;
+
+    @media (min-width: 1024px) {
+        padding:0 60px;
+    }
+
+    &--container {
+        display:flex;
+        flex-direction: column;
+        position: relative;
+
+        @media (min-width: 1024px){
+            border:solid 1px var(--neutrals--300);
+            flex-direction: row;
+        }
+    }
+
+    &--image {
+        aspect-ratio: 2 / 1;
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        flex:1;
+
+        @media (min-width: 1024px){
+            aspect-ratio: 7 / 5;
+        }
+
+    }
+
+    &--text {
+        color: var(--base--white, #FFF);
+        color: var(--base--black, #000);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        left:0;
+        padding:24px;
+
+        @media (min-width: 640px) {
+            padding:48px;
+        }
+
+        @media (min-width: 1024px) {
+            aspect-ratio: 1 / 1;
+            max-width:calc(33.333% + 24px);
+        }
+
+        button {
+            width:fit-content;
+        }
+    }
+
+    &--title {
+        font-family: "BrunelTextShort";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; 
+
+        @media (min-width: 640px){
+            font-size: 32px;
+            line-height: 36px; 
+        }
+    }
+}

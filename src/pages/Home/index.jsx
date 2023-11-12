@@ -12,6 +12,7 @@ export default function PageHome() {
             <div className="page--home_menu">
                 <h4>Blocks</h4>
                 <Link to="/Header">Header</Link>
+                <Link to="/RaffleHero">Raffle Hero</Link>
                 <h4>Components</h4>
                 <h4>Elements</h4>
                 <h4>Pages</h4>

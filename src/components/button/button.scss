@@ -2,7 +2,8 @@
     align-items: center;
     background:var(--base---black);
     border:solid 1px var(--base---black);
-    color:var(--base---white);
+    color:var(--base---white, #fff);
+    cursor: pointer;
     display:flex;
     font-family: "BrunelTextShort";
     font-size:18px;
@@ -10,5 +11,5 @@
     justify-content: center;
     line-height:24px;
     height:44px;
-    width:100%;
+    padding:0 24px;
 }
