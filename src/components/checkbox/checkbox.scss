@@ -1,0 +1,47 @@
+.checkbox {
+    color: var(--base---black, #010101);
+    font-family: "Graphik";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+
+    &--container {
+        align-items: center;
+        cursor: pointer;
+        display:flex;
+        gap:8px;
+        padding:8px 0;
+
+        input[type=checkbox] {
+            display:none;
+        }
+
+        &::before {
+            background-color:var(--base---white, #ffffff);
+            border: 2px solid var(--neutrals-neutrals-300, #D2D5DC);
+            content:"";
+            display:block;
+            height:20px;
+            width:20px;
+        }
+
+        &.checked {
+
+            &::before {
+                background-color:var(--base---black, #000);
+                background-image: url('data:image/svg+xml,<svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.03838 9.46737C5.02786 9.47915 5.01695 9.49069 5.00565 9.502C4.68133 9.82631 4.15551 9.82631 3.83119 9.502L0.57649 6.2473C0.252172 5.92298 0.252173 5.39716 0.57649 5.07284C0.900808 4.74852 1.42663 4.74852 1.75095 5.07284L4.41841 7.7403L11.5822 0.57649C11.9065 0.252173 12.4324 0.252172 12.7567 0.57649C13.081 0.900808 13.081 1.42663 12.7567 1.75095L5.07282 9.43481C5.06157 9.44605 5.05009 9.45691 5.03838 9.46737Z" fill="white"/></svg>');
+                background-position: center center;
+                background-repeat: no-repeat;
+                border: 2px solid var(--base---black, #000);
+            }
+        }
+    }
+
+    &--swatch {
+        border: 1px solid var(--neutrals-300, #D2D5DC);
+        border-radius:32px;
+        height:18px;
+        width:18px;
+    }
+}

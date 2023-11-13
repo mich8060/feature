@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import './searchoverlay.scss';
 
+import NumberFormat from '../numberFormat';
 import Product from '../product';
 import SectionTitle from '../sectionTitle';
 
@@ -84,7 +85,7 @@ export default function SeaerchOverlay({active, searchMobile}){
                                                     brand={result.v}
                                                     image={result.t}
                                                     title={result.l}
-                                                    price={result.p}
+                                                    price={<NumberFormat amount={result.p} />}
                                                 />
                                             )
                                         }

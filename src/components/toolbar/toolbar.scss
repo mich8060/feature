@@ -1,0 +1,17 @@
+.toolbar {
+    background:var(--base---white, #fff);
+    border-bottom:solid 1px var(--neutrals--300);
+	font-family: "BrunelTextShort";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    margin:0 auto;
+    max-width:1440px;
+    padding:12px 0;
+    width:100%;
+    z-index: 999;
+
+    &--container {
+    }
+}

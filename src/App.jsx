@@ -11,6 +11,7 @@ import PDP from './pages/PDP/'
 
 import Header from './pages/Header/'
 import RaffleHero from './pages/RaffleHero/';
+import Catalog from './pages/Catalog';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/Catalog" element={<Catalog />} />
 					<Route path="/Header" element={<Header />} />
 					<Route path="/PDP" element={<PDP />} />
 					<Route path="/RaffleHero" element={<RaffleHero />} />

@@ -1,0 +1,40 @@
+.listing {
+
+    &--body {
+        display: flex;
+        margin:0 auto;
+        max-width:1440px;
+        width:100%;
+    }
+
+    &--facets {
+        flex:1 0 280px;
+    }
+
+    &--overflow {
+        height:calc(100vh - 54px);
+        overflow:scroll;
+        position: sticky;
+        top:54px;
+    }
+
+    &--products {
+        display:flex;
+        flex-wrap: wrap;
+        gap:24px;
+        padding:24px;
+
+        .product {
+            min-width:calc(25% - 24px);
+            padding:24px;
+            width:100%;
+        }
+    }
+
+    &--toolbar {
+        height: 54px;
+        position: sticky;
+        top: 0;
+        z-index:999;
+    }
+}

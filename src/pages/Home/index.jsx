@@ -16,6 +16,7 @@ export default function PageHome() {
                 <h4>Components</h4>
                 <h4>Elements</h4>
                 <h4>Pages</h4>
+                <Link to="/Catalog">Catalog Page</Link>
                 <Link to="/PDP">Product Detail Page</Link>
             </div>
         </div>

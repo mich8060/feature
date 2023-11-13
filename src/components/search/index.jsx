@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './search.scss';
 import axios from 'axios';
 
+import NumberFormat from '../numberFormat';
 import Product from '../product';
 import SectionTitle from '../sectionTitle';
 
@@ -105,7 +106,7 @@ export default function Search({searchMode}){
                                                     brand={result.v}
                                                     image={result.t}
                                                     title={result.l}
-                                                    price={result.p}
+                                                    price={<NumberFormat amount={result.p} />}
                                                 />
                                             )
                                         }
