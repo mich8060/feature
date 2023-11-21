@@ -7,7 +7,9 @@ import {
 import './app.scss';
 
 import Home from './pages/Home/';
-import PDP from './pages/PDP/'
+import PDP from './pages/PDP/';
+
+import PageBreadcrumb from './pages/Breadcrumb/';
 
 import Header from './pages/Header/'
 import RaffleHero from './pages/RaffleHero/';
@@ -20,10 +22,11 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/Catalog" element={<Catalog />} />
-					<Route path="/Header" element={<Header />} />
+					<Route path="/catalog" element={<Catalog />} />
+					<Route path="/header" element={<Header />} />
 					<Route path="/PDP" element={<PDP />} />
-					<Route path="/RaffleHero" element={<RaffleHero />} />
+					<Route path="/raffleHero" element={<RaffleHero />} />
+					<Route path="/breadcrumb" element={<PageBreadcrumb />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

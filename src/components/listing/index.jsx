@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './listing.scss';
 
+import Breadcrumb from '../breadcrumb';
 import Facet from '../facet';
 import NumberFormat from '../numberFormat';
 import Product from '../product';
@@ -32,11 +33,16 @@ export default function Listing(){
 
     return(
         <div className="listing">
-            <div className="listing--toolbar">
-                <Toolbar
-                    title={total_results}
-                />
-            
+            <div className="listing--intro">
+                <div className="listing--container">
+                    <div className="listing--headline">Clothing</div>
+                    <Breadcrumb>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Clothing</a></li>
+                        </ul>
+                    </Breadcrumb>
+                </div>
             </div>
             <div className="listing--body">
                 <div className="listing--facets">
@@ -59,6 +65,11 @@ export default function Listing(){
                     </div>
                 </div>
                 <div className="listing--products">
+                    <div className="listing--toolbar">
+                        <Toolbar
+                            title={total_results}
+                        />
+                    </div>
                     {productAPI.items.length > 0 ? (
                         <>
                             {productAPI.items.map((result, index) => (

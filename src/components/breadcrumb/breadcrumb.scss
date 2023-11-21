@@ -1,0 +1,48 @@
+.breadcrumb {
+
+    a {
+        color: var(--neutrals-600, #4C5564);
+        cursor: pointer;
+        font-family: "Graphik";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+
+        &:hover {
+            text-decoration-line: underline;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        margin:0;
+        padding:0;
+    }
+
+    li {
+        align-items: center;
+        display: flex;
+        margin:0;
+        padding:0;
+
+        &:first-child {
+            &::before {
+                display:none;
+            }
+        }
+
+        &::before {
+            content:"/";
+            display:block;
+            color: var(--neutrals-600, #4C5564);
+            font-family: "Graphik";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px; /* 125% */
+            padding:0 8px;
+        }
+    }
+}

@@ -11,12 +11,13 @@ export default function PageHome() {
             </svg>
             <div className="page--home_menu">
                 <h4>Blocks</h4>
-                <Link to="/Header">Header</Link>
-                <Link to="/RaffleHero">Raffle Hero</Link>
+                <Link to="/header">Header</Link>
+                <Link to="/raffleHero">Raffle Hero</Link>
                 <h4>Components</h4>
+                <Link to="/breadcrumb">Breadcrumb</Link>
                 <h4>Elements</h4>
                 <h4>Pages</h4>
-                <Link to="/Catalog">Catalog Page</Link>
+                <Link to="/catalog">Catalog Page</Link>
                 <Link to="/PDP">Product Detail Page</Link>
             </div>
         </div>
